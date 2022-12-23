@@ -25,12 +25,12 @@ module.exports = {
     rules: {
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
-        '@typescript-eslint/no-var-requires': 'off',
+        // '@typescript-eslint/no-var-requires': 'off',
         'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
-        'react/prop-types': 'off',
-        'react/jsx-uses-react': 'off',
-        'react/react-in-jsx-scope': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'react-hooks/exhaustive-deps': 'error',
+        // 'react/prop-types': 'off',
+        // 'react/jsx-uses-react': 'off',
+        // 'react/react-in-jsx-scope': 'off',
+        // '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
 };
