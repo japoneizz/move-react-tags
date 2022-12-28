@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { getByDataCy } from '@/utils/custom-queries';
+import { getByDataCy } from '@/utils/customQueries';
 import userEvent from '@testing-library/user-event';
 
 import { Tag } from '@/features/tags/models/tag.model';

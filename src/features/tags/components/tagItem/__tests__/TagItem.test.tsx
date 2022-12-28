@@ -2,7 +2,7 @@ import React from 'react';
 import MockAdapter from 'axios-mock-adapter';
 import userEvent from '@testing-library/user-event';
 import { render } from '@testing-library/react';
-import { getByDataCy } from '@/utils/custom-queries';
+import { getByDataCy } from '@/utils/customQueries';
 
 import TagItem from '@/features/tags/components/tagItem/TagItem';
 import { Tag } from '@/features/tags/models/tag.model';

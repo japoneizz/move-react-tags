@@ -2,7 +2,7 @@ import React from 'react';
 import userEvent from '@testing-library/user-event';
 import { render } from '@testing-library/react';
 
-import { getByDataCy } from '@/utils/custom-queries';
+import { getByDataCy } from '@/utils/customQueries';
 import TagItemEdit from '@/features/tags/components/tagItemEdit/TagItemEdit';
 
 const tagItemEditPropsStub = {
