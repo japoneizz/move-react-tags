@@ -24,7 +24,7 @@ describe('testing TagItem', () => {
   it('should call setTags after click on delete btn', async () => {
     const user = userEvent.setup();
     const tag = new Tag('Tag 1');
-    axiosMock.onDelete(`/tags/${tag.getIdentifier()}`).reply(200, tag);
+    axiosMock.onDelete(`/tags/${tag.getIdentifier()}`).reply(202, tag);
 
     const setTagsSpy = jest.spyOn(storageProviderStub, 'setTags');
 
@@ -67,7 +67,7 @@ describe('testing TagItem', () => {
     const tag = new Tag('Tag 1');
     tag.toggleEditing();
 
-    axiosMock.onPut(`/tags/${tag.getIdentifier()}`).reply(200, tag);
+    axiosMock.onPut(`/tags/${tag.getIdentifier()}`).reply(201, tag);
 
     const setTagsSpy = jest.spyOn(storageProviderStub, 'setTags');
 
